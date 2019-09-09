@@ -1,8 +1,25 @@
 <html> 
     <head> 
         <style>
+            .content { 
+                max-width: 1300px;
+                margin: auto;
+            }
+            .inhoud {
+                display: flex;
+                width:100%;
+                height:auto;
+                border-bottom: 5px solid rgb(131, 131, 131);
+                justify-content: flex-end;
+                
+            }
+            .text {
+                width: auto;
+                height: auto;
+                border-bottom: 5px solid rgb(131, 131, 131);
+            }
             body { 
-                background-image: url("Image's/memphis-mini.png");
+                background-image: url("Image's/Moonlit Asteroid.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -10,39 +27,135 @@
             #Tabs_table {
                 table-layout: fixed;
                 width: 300px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: antiquewhite
             }
-            #Tabs_table    th:nth-child(odd) {background-color: rgb(173, 173, 173)}                
-            #Tabs_table    th:nth-child(even) {background-color: rgb(194, 194, 194)}
-            #Tabs_table    th:hover {background-color: rgb(131, 131, 131)}
+            #Tabs_table    th:nth-child(odd) {background-color: #0F2027}                
+            #Tabs_table    th:nth-child(even) {background-color: #2C5364}
+            #Tabs_table    th:hover {background-color: #203A43}
             #Tabs_table    th {
                 padding: 15px;
-                font-size: 110%
+                font-size: 110%;
+            }
+            #Inhoud {
+                color: antiquewhite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                width: 300px;
             }
             #Language_table {
-                border: 1xp solid black;
+                color: antiquewhite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: x-large;
                 border-collapse: collapse;
-                padding: 15px;  
             }
+            #Language_table th:nth-child(even) {background-color: #0F2027}
+            #Language_table th:nth-child(odd) {background-color: #203A43}
+            #Language_table td:nth-child(even) {background-color: #0F2027} 
+            #Language_table td:nth-child(odd) {background-color: #203A43}
+            #Language_table td:hover {background-color: #2C5364}
             h1 { 
                 font-size:xx-large;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: antiquewhite;
             }
-        </style>
+            h2 {
+                font-size: large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:antiquewhite;
+            }
+            p {
+                color: antiquewhite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: medium;
+            }
+            a {
+                color: antiquewhite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            </style>
     </head>
 <body>
-    <table id="Tabs_table" align="center">
-        <tr>
-            <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
-            <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
-            <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
-        </tr>
-    </table>
-    <table id="Language_table" align="left"> 
-        <tr> 
-            <th>Name</th>
-            <th>Logo</th>
-        </tr>
-    </table>
-    <h1> INDEX</h1>
+    <div class="content">
+        <header>
+            <h1 align="center">
+                Persoonsprofiel
+            </h1>
+            <h2 align="center">
+                Ezra Kooijker
+            </h2>
+        </header>
+        <nav>
+            <table id="Tabs_table" align="center">
+                <tr>
+                    <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
+                    <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
+                    <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
+                </tr>
+            </table>
+        </nav>
+        <br /> 
+        <br />
+        <br />
+        <div class="inhoud">
+            <table id="Inhoud" align="left"> 
+                <tr> 
+                    <td><a href="#Q1">1. Mijn centrale drijfveer</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#Q2">2. Mijn persoonlijke doelen</a> </td>
+                </tr>
+                <tr>
+                    <td><a href="#Q3">3. Mijn sterke punten</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#Q4">4. Mijn verbeter punten</a> </td>
+                </tr>
+                <tr>
+                    <td><a href="#Q5">5. Mijn opleidingen</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#Q6">6. Mijn werkervaring</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#Q7">7. Mijn projecten en andere ervaringen</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="text">
+            <h1 id="Q1" > Mijn centrale drijfveer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id veniam assumenda optio sit exercitationem dolor sapiente cumque aliquam debitis impedit consectetur, quo aperiam aspernatur fugiat, ullam tenetur quae pariatur.</p>
+            <h1 id="Q2">Mijn persoonlijke doelen</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laboriosam debitis ipsam deserunt a porro. Illo, laboriosam unde aperiam expedita sint nemo eaque rerum incidunt delectus ea iusto! Temporibus, excepturi!</p>
+            <h1 id="Q3">Mijn sterke punten</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quidem ex excepturi perspiciatis dolor deserunt et similique praesentium nemo perferendis, nam dignissimos facere velit exercitationem corporis repellendus recusandae, quis hic?</p>
+            <h1 id="Q4">Mijn verbeter punten</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur, ipsum natus, qui beatae dicta porro aliquam eum voluptas nemo sint architecto eveniet reiciendis necessitatibus nisi facilis! Eum, incidunt corporis.</p>
+            <h1 id="Q5">Mijn opleidingen</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quis quod! At accusamus, explicabo quas ad minima ipsum sapiente, dolorum nostrum beatae, harum numquam quod itaque quidem. Optio, veniam nisi?</p>
+            <h1 id="Q6">Mij werkervaring</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis necessitatibus soluta assumenda. Illum nam voluptas officia! Quam provident possimus ullam quae. Maiores nemo tempore nulla expedita repellat beatae nostrum?</p>
+            <h1 id="Q7">Mijn projecten en andere ervaringen</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maiores incidunt, mollitia libero illo debitis dolorem consectetur nihil illum cum nesciunt eius, tempore fugit tempora deserunt minima, enim corporis. Mollitia!</p>
+        </div>
+        <div class="Language table">
+                <table id="Language_table" align="center">
+                    <caption>Talen die ik ken</caption>
+                    <tr>
+                        <th>Html</td>
+                        <th>Css</td>
+                        <th>C#</td>
+                        <th>Python</td>
+                        <th>Java</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"><img src="Image's/Html logo.png" /></a></td>
+                        <td><a href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="Image's/Css logo.png"/></a></td>
+                        <td><a href="https://nl.wikipedia.org/wiki/C%E2%99%AF"><img src="Image's/Csharp logo.png"/></a></td> 
+                        <td><a href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)"><img src="Image's/Python logo.png"/></a></td>
+                        <td><a href="https://nl.wikipedia.org/wiki/Java_(programmeertaal)"><img src="Image's/Java logo.png"/></a></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
 </body> 
 </html>
