@@ -1,18 +1,26 @@
-.content { 
-    max-width: 1300px;
-    margin: auto;
-}
 body { 
     background-image: url("Image's/Moonlit Asteroid.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.content { 
+    max-width: 1300px;
+    margin: auto;
+    background-color: red
+}
+.Head {
+    background-color: pink;
+    display: inline-table;
+    margin: 0 center;
+    justify-content: center;
+}
 #Tabs_table {
     table-layout: fixed;
     width: 300px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: antiquewhite
+    color: antiquewhite;
+    margin: 0 auto;
 }
 #Tabs_table    th:nth-child(odd) {background-color: #0F2027}                
 #Tabs_table    th:nth-child(even) {background-color: #2C5364}
