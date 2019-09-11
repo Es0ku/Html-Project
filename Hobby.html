@@ -1,16 +1,51 @@
 <html> 
     <head> 
         <link href="Stylesheet.css" rel="Stylesheet" type="text/css"/>
+        <style>
+            .Hobby{ 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .Klimmen {
+                display: flex;
+                height:1000px ;
+                width: 30%;
+                flex-direction: row;
+                padding: 10px;
+                /* background-color: blueviolet; */
+            }
+            .Gamen {
+                display: flex;
+                height:1000px ;
+                width: 40%;
+                flex-direction: row;
+                border-left: 5px solid  rgb(131, 131, 131);
+                padding: 10px;
+                /* background-color: blue; */
+            }
+            .IR {
+                display:flex;
+                height:1000px ;
+                width: 30%;
+                flex-direction: row;
+                border-left: 5px solid  rgb(131, 131, 131);
+                padding: 10px;
+                /* background-color: black; */
+            }
+        </style>
     </head>
 <body>
     <div class="content">
         <header>
-            <h1 align="center">
-                Hobby
-            </h1>
-            <h2 align="center">
-                Ezra Kooijker
-            </h2>
+            <div class="Head">
+                <h1>
+                    Hobby
+                </h1>
+                <h2>
+                    Ezra Kooijker
+                </h2>
+            </div>
         </header>
         <table id="Tabs_table">
             <tr>
@@ -19,7 +54,17 @@
                 <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
             </tr>
         </table>
-        
+        <div class="Hobby">
+            <div class="Klimmen">
+                <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Unde, illo, quidem accusamus adipisci nam fuga nostrum aspernatur inventore dolores illum ea facere reiciendis nemo, possimus numquam esse. Vel, veniam eos!</p>
+            </div>
+            <div class="Gamen">
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime labore eligendi harum iure voluptates. Ea ducimus provident suscipit maiores cupiditate? Et, neque ratione dicta excepturi aperiam accusantium fugiat eum minus?</P>
+            </div>
+            <div class="IR">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus error iusto laborum eos quia delectus, assumenda fuga, cumque ducimus quam doloribus porro voluptatem non voluptas nam illo alias corrupti.</p>
+            </div>
+        </div>
     </div>
 </body> 
 </html>

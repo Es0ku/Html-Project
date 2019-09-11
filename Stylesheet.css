@@ -7,13 +7,11 @@ body {
 .content { 
     max-width: 1300px;
     margin: auto;
-    background-color: red
 }
 .Head {
-    background-color: pink;
-    display: inline-table;
-    margin: 0 center;
-    justify-content: center;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 #Tabs_table {
     table-layout: fixed;

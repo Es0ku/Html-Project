@@ -1,6 +1,30 @@
 <html> 
     <head> 
-        <link rel="stylesheet" href="Stylesheet.css" type="text/css"/>
+        <link href="Stylesheet.css" rel="Stylesheet" type="text/css"/>
+        <style>
+            .Contact {
+                display: flex;
+                justify-content: flex-end;
+                background-color: aqua;
+            }
+            .Form {
+                display: flex;
+                color: antiquewhite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: antiquewhite;
+            }
+            .Naam  {
+                
+            }
+            .Email {
+                width: 300px;
+            }
+            .Text {
+                height: 100px;
+                width: 300px;
+                resize: none;
+            }
+        </style>
     </head>
 <body>
     <div class="content">
@@ -21,7 +45,19 @@
                 <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
             </tr>
         </table>
-
+        <div class="Contact">
+            <div class="Form">
+                <form>
+                    Naam:<br>
+                    <input class="Naam" type="text" name="Naam" placeholder="Naam"><br>
+                    Email adres:<br>
+                    <input class="Email" type="email" name="Email" placeholder="Email"><br>
+                    Vraag<br>
+                    <textarea class="Text" type="text" name="Vraag" rows="3" cols="10" placeholder="Ask me anything"></textarea><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
     </div>    
 </body> 
 </html>
