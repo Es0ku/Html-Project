@@ -4,57 +4,98 @@
         <style>
             .contact {
                 display: flex;
-                justify-content: flex-end;
-                background-color: aqua;
+                justify-content:space-around;
+                align-items: center;
+                /* background-color: aqua; */
+                height: 700px;
+            }
+            .contact-info {
+                /* background-color: brown; */
+                transform: scale(1.2);
+                height: 400px;
             }
             .form {
                 display: flex;
                 color: antiquewhite;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                background-color: purple;
+                /* background-color: purple; */
+                transform: scale(2);
             }
             .naam  {
-                
+                border: 1px solid rgb(131, 131, 131);
+                border-radius: 3px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
             .email {
+                border: 1px solid rgb(131, 131, 131);
                 width: 300px;
+                border-radius: 3px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 0px 0px 5px 0px;
+            }
+            .select {
+                border: 1px solid rgb(131, 131, 131);
+                width: 300px;
+                border-radius: 3px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
             .text {
+                border: 1px solid rgb(131, 131, 131);
                 height: 100px;
                 width: 300px;
                 resize: none;
+                border-radius: 3px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .submit {
+                border: 1px solid rgb(131, 131, 131);
+                border-radius: 3px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
         </style>
     </head>
 <body>
     <div class="content">
-        <header>
-            <div class="head">
-                <h1>
-                    Contact
-                </h1>
-                <h2>
-                    Ezra Kooijker
-                </h2>
-            </div>
-        </header>
-        <table id="tabs_table">
-            <tr>
-                <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
-                <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
-                <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
-            </tr>
-        </table>
+        <div class="head">
+            <h1>
+                Contact
+            </h1>
+            <h2>
+                Ezra Kooijker
+            </h2>
+        </div>
+        <div class="tabs_table">
+            <table id="tabs_table">
+                <tr>
+                    <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
+                    <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
+                    <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
+                </tr>
+            </table>
+        </div>
         <div class="contact">
+            <div class="contact-info">
+                <h2>Naam: Ezra Kooijker</h2><br>
+                <h2>Email: ezrakooijker@gmail.com</h2><br>
+                <h2>Nummer: +31613742213</h2>
+            </div>
             <div class="form">
                 <form>
                     Naam:<br>
                     <input class="naam" type="text" name="naam" placeholder="Naam"><br>
                     Email adres:<br>
                     <input class="email" type="email" name="email" placeholder="Email"><br>
+                    <select class="select" placeholder="Onderwerp">
+                        <option value="Onderwer:">Onderwerp:</option>
+                        <option value="Hobby's">Hobby's</option>
+                        <option value="Werk">Werk</option>
+                        <option value="Info">Info</option>
+                        <option value="Opleiding">Opleiding</option>
+                        <option value="Overig">Overig</option>
+                    </select><br>
                     Vraag<br>
-                    <textarea class="text" type="text" name="vraag" rows="3" cols="10" placeholder="Ask me anything"></textarea><br>
-                    <input type="submit" value="submit">
+                    <textarea class="text" type="text" name="vraag:" rows="3" cols="10" placeholder="Vraag mij alles"></textarea><br>
+                    <input class="submit" type="submit" value="submit">
                 </form>
             </div>
         </div>

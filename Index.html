@@ -20,6 +20,7 @@
                 width: 300px;
                 margin: 0 left;
             }
+            #inhoud a:hover {color: rgb(131, 131, 131)}
             #language_table {
                 color: antiquewhite;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,6 +28,10 @@
                 border-collapse: collapse;
                 margin: 0 auto;
             }
+            #language_table th:nth-child(1) {border-top-left-radius: 10px}
+            #language_table th:nth-child(5) {border-top-right-radius: 10px}
+            #language_table td:nth-child(1) {border-bottom-left-radius: 10px}
+            #language_table td:nth-child(5) {border-bottom-right-radius: 10px}
             #language_table th:nth-child(even) {background-color: #0F2027}
             #language_table th:nth-child(odd) {background-color: #203A43}
             #language_table td:nth-child(even) {background-color: #0F2027} 
@@ -36,17 +41,15 @@
     </head>
 <body>
     <div class="content">
-        <header>
-            <div class="head">
-                <h1>
-                    Persoonsprofiel
-                </h1>
-                <h2>
-                    Ezra Kooijker
-                </h2>
-            </div>
-        </header>
-        <nav>
+        <div class="head">
+            <h1>
+                Persoonsprofiel
+            </h1>
+            <h2>
+                Ezra Kooijker
+            </h2>
+        </div>
+        <div class="tabs_table">
             <table id="tabs_table">
                 <tr>
                     <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
@@ -54,7 +57,7 @@
                     <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
                 </tr>
             </table>
-        </nav>
+        </div>
         <br /> 
         <br />
         <br />
@@ -100,24 +103,24 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maiores incidunt, mollitia libero illo debitis dolorem consectetur nihil illum cum nesciunt eius, tempore fugit tempora deserunt minima, enim corporis. Mollitia!</p>
         </div>
         <div class="language table">
-                <table id="language_table">
-                    <caption>Talen die ik ken</caption>
-                    <tr>
-                        <th>Html</td>
-                        <th>Css</td>
-                        <th>C#</td>
-                        <th>Python</td>
-                        <th>Java</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"><img src="Image's/Html logo.png" /></a></td>
-                        <td><a href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="Image's/Css logo.png"/></a></td>
-                        <td><a href="https://nl.wikipedia.org/wiki/C%E2%99%AF"><img src="Image's/Csharp logo.png"/></a></td> 
-                        <td><a href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)"><img src="Image's/Python logo.png"/></a></td>
-                        <td><a href="https://nl.wikipedia.org/wiki/Java_(programmeertaal)"><img src="Image's/Java logo.png"/></a></td>
-                    </tr>
-                </table>
-            </div>
+            <table id="language_table">
+                <caption>Talen die ik ken</caption>
+                <tr>
+                    <th>Html</th>
+                    <th>Css</th>
+                    <th>C#</th>
+                    <th>Python</th>
+                    <th>Java</th>
+                </tr>
+                <tr>
+                    <td><a href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"><img src="Image's/Html logo.png" /></a></td>
+                    <td><a href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="Image's/Css logo.png"/></a></td>
+                    <td><a href="https://nl.wikipedia.org/wiki/C%E2%99%AF"><img src="Image's/Csharp logo.png"/></a></td> 
+                    <td><a href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)"><img src="Image's/Python logo.png"/></a></td>
+                    <td><a href="https://nl.wikipedia.org/wiki/Java_(programmeertaal)"><img src="Image's/Java logo.png"/></a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body> 
 </html>

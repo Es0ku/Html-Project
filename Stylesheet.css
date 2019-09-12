@@ -13,13 +13,18 @@ body {
     height: auto;
     text-align: center;
 }
+.head h1{font-size: 60px;}
+.head h2{font-size: 20px}
 #tabs_table {
     table-layout: fixed;
     width: 300px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: antiquewhite;
     margin: 0 auto;
+    border-collapse: collapse;
 }
+#tabs_table    th:nth-child(1) {border-top-left-radius: 10px; border-bottom-left-radius: 10px}
+#tabs_table    th:nth-child(3) {border-top-right-radius: 10px; border-bottom-right-radius: 10px}
 #tabs_table    th:nth-child(odd) {background-color: #0F2027}                
 #tabs_table    th:nth-child(even) {background-color: #2C5364}
 #tabs_table    th:hover {background-color: #203A43}

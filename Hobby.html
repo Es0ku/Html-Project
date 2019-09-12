@@ -7,62 +7,92 @@
                 flex-direction: row;
                 justify-content: space-around;
             }
-            .klimmen {
-                display: flex;
-                height:1000px ;
-                width: 30%;
-                flex-direction: row;
-                padding: 10px;
-                /* background-color: blueviolet; */
-            }
             .gamen {
                 display: flex;
-                height:1000px ;
-                width: 40%;
-                flex-direction: row;
-                border-left: 5px solid  rgb(131, 131, 131);
+                height:1300px ;
+                width: 30%;
                 padding: 10px;
-                /* background-color: blue; */
+                flex-direction: column;
+            }
+            .witcher3 {
+                height: 300px;
+                width: 100%;
+            }
+            .terraria {
+                height: 300px;
+                width: 100%;            
+            }
+            .klimmen {
+                display: flex;
+                height:1300px ;
+                width: 40%;
+                padding: 10px;
+                border-left: 5px solid  rgb(131, 131, 131);
+                flex-direction: column;
+            }
+            .klimhal{
+                height: 500px;
+                width: 100%;
+            }
+            .buitenmuur {
+                height: 350px;
+                width: 100%;
             }
             .ir {
                 display:flex;
-                height:1000px ;
+                height:1300px ;
                 width: 30%;
-                flex-direction: row;
                 border-left: 5px solid  rgb(131, 131, 131);
                 padding: 10px;
-                /* background-color: black; */
+                flex-direction: column;
+            }
+            .irlogo {
+                height: 120px;
+                width: 100%;           
+            }
+            .irteam {
+                height: 250px;
+                width: 100%;
+            }
+            p {
+                font-size: x-large;
             }
         </style>
     </head>
 <body>
     <div class="content">
-        <header>
-            <div class="head">
-                <h1>
-                    Hobby
-                </h1>
-                <h2>
-                    Ezra Kooijker
-                </h2>
-            </div>
-        </header>
-        <table id="tabs_table">
-            <tr>
-                <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
-                <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
-                <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
-            </tr>
-        </table>
+        <div class="head">
+            <h1>
+                Hobby
+            </h1>
+            <h2>
+                Ezra Kooijker
+            </h2>
+        </div>
+        <div class="tabs_table">
+            <table id="tabs_table">
+                <tr>
+                    <th onclick=document.location.href="Index.html" style="cursor: pointer">Index</th>
+                    <th onclick=document.location.href="Hobby.html" style="cursor: pointer">Hobby</th>
+                    <th onclick=document.location.href="Contact.html" style="cursor: pointer">Contact</th>
+                </tr>
+            </table>
+        </div>
         <div class="hobby">
-            <div class="klimmen">
-                <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Unde, illo, quidem accusamus adipisci nam fuga nostrum aspernatur inventore dolores illum ea facere reiciendis nemo, possimus numquam esse. Vel, veniam eos!</p>
-            </div>
             <div class="gamen">
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime labore eligendi harum iure voluptates. Ea ducimus provident suscipit maiores cupiditate? Et, neque ratione dicta excepturi aperiam accusantium fugiat eum minus?</P>
+                <img class="witcher3" src="Image's/Witcher 3.jpg">
+                <p>In mijn vrije tijd game ik vaak. Ik speel vaak RPG's zoals de witcher 3. en ook wel veel MMO-RPG's zoals World of Warcraft of Runescape.<br>De game die ik het meest heb gespeeld is Terraria. ik heb inmiddels 600+ uren in terraria zitten, waarmee hij de game is die ik de meeste uren heb gespeeld.</p>
+                <img class="terraria" src="Image's/Terraria.jpg">
+            </div>
+            <div class="klimmen">
+                <img class="klimhal" src="Image's/Klimhal.jpg">
+                <p>Twee keer in de week heb ik klimtraining. Dan oefen ik betere technieken om te klimmen, zodat ik moeilijkere routes kan klimmen.<br>Elke week zijn er weer nieuwe routes te klimmen, dus je klimt bijna nooit twee keer dezelfde route.<br>Beneden is een bolderhal, daar kun je gaan klimmen op minder hoge routes, en dan wordt je ook niet gezekerd.<br>Als het warm is dan kun je op de buitenwand gaan klimmen. De buitenwand is veel meer gebaseerd op een echte rots, dus je kunt vaak ook de wand als greep gebruiken.</p>
+                <img class="buitenmuur" src="Image's/buitenmuur.jpg">
             </div>
             <div class="ir">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus error iusto laborum eos quia delectus, assumenda fuga, cumque ducimus quam doloribus porro voluptatem non voluptas nam illo alias corrupti.</p>
+                <img class="irlogo" src="Image's/irlogo.png">
+                <p>Ik zit bij een robot team genaamd "Impossible Robotics". Met het team doen we mee aan internationale wedstrijden, waarmee we de beste robot moeten bouwen die een bepaalde functie kan uitvoeren.<br>Vorig jaar zijn we in de zomervakantie naar Mexico gegaan om mee te doen aan de "First global competition" A.k.A. FGC.<br>Het team bestaat uit mensen uit heel nederland, maar de meeste komen uit het noorden.</p>
+                <img class="irteam" src="Image's/ir team.jpg">
             </div>
         </div>
     </div>
